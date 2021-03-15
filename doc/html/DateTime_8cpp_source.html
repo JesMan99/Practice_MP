@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SHOPPING1: Fichero Fuente src/DateTime.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SHOPPING1
+   &#160;<span id="projectnumber">0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">DateTime.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="DateTime_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="DateTime_8h.html">DateTime.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="DateTime_8cpp.html#a9962ec9b30855e08347df66f3fc99345">isCorrect</a>(<span class="keywordtype">int</span> year, <span class="keywordtype">int</span> month, <span class="keywordtype">int</span> day, <span class="keywordtype">int</span> hour, <span class="keywordtype">int</span> min, <span class="keywordtype">int</span> sec);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="DateTime_8cpp.html#a40c0e29735b283553262cdd0d46009a2">split</a>( std::string line, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span>  m, <span class="keywordtype">int</span>  d, <span class="keywordtype">int</span>  h, <span class="keywordtype">int</span> mn, <span class="keywordtype">int</span> s);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classDateTime.html#a3ccfb87f7a2e9683b91964e32d907161">   46</a></span>&#160;<a class="code" href="classDateTime.html#a3ccfb87f7a2e9683b91964e32d907161">DateTime::DateTime</a>() {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> DateTime::initDefault() {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="DateTime_8cpp.html#a9962ec9b30855e08347df66f3fc99345">   52</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="DateTime_8cpp.html#a9962ec9b30855e08347df66f3fc99345">isCorrect</a>(<span class="keywordtype">int</span> year, <span class="keywordtype">int</span> month, <span class="keywordtype">int</span> day, <span class="keywordtype">int</span> hour, <span class="keywordtype">int</span> min, <span class="keywordtype">int</span> sec) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="DateTime_8cpp.html#a40c0e29735b283553262cdd0d46009a2">   57</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="DateTime_8cpp.html#a40c0e29735b283553262cdd0d46009a2">split</a>( std::string line, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span>  m, <span class="keywordtype">int</span>  d, <span class="keywordtype">int</span>  h, <span class="keywordtype">int</span> mn, <span class="keywordtype">int</span> s) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classDateTime.html#a0943bdd7ab55eb6d1937f44fa0a7342a">   61</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classDateTime.html#a0943bdd7ab55eb6d1937f44fa0a7342a">DateTime::set</a>( std::string  line) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="classDateTime.html#a3ccfb87f7a2e9683b91964e32d907161">DateTime::DateTime</a>( <span class="keywordtype">string</span>  line) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classDateTime.html#a6368ac4394f818c188fd0967ea3af5bd">   68</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classDateTime.html#a6368ac4394f818c188fd0967ea3af5bd">DateTime::year</a>()  {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classDateTime.html#ad5f71c0dffadc44eb898dca9e9e97aa6">   71</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classDateTime.html#ad5f71c0dffadc44eb898dca9e9e97aa6">DateTime::month</a>()  {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classDateTime.html#ae507ab264dc54fae07240db856007e68">   74</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classDateTime.html#ae507ab264dc54fae07240db856007e68">DateTime::day</a>()  {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classDateTime.html#a79f6c2a14f303ad7860f5313a2272635">   77</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classDateTime.html#a79f6c2a14f303ad7860f5313a2272635">DateTime::hour</a>()  {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classDateTime.html#ab1abad4ec2cd4f807de6cb85061f0506">   80</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classDateTime.html#ab1abad4ec2cd4f807de6cb85061f0506">DateTime::min</a>()  {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classDateTime.html#adf4b8e704fc6172397ca6fd875e4cc1f">   83</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classDateTime.html#adf4b8e704fc6172397ca6fd875e4cc1f">DateTime::sec</a>()  {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classDateTime.html#a5279b2b5c7e7bf60497902f802e988f8">   86</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classDateTime.html#a5279b2b5c7e7bf60497902f802e988f8">DateTime::isBefore</a>( <a class="code" href="classDateTime.html">DateTime</a>  one)  {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classDateTime.html#a7f701348d4b4e2f189f931b1f91632d2">   89</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classDateTime.html#a7f701348d4b4e2f189f931b1f91632d2">DateTime::weekDay</a>()  {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classDateTime.html#a246ab4f7cd93e15135efb69363d97d83">   93</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="classDateTime.html#a246ab4f7cd93e15135efb69363d97d83">DateTime::to_string</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">char</span> local[64];</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    sprintf(local, <span class="stringliteral">&quot;%04i-%02i-%02i %02i:%02i:%02i UTC&quot;</span>, _year, _month, _day, _hour, _min, _sec);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> local;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassDateTime_html_a3ccfb87f7a2e9683b91964e32d907161"><div class="ttname"><a href="classDateTime.html#a3ccfb87f7a2e9683b91964e32d907161">DateTime::DateTime</a></div><div class="ttdeci">DateTime()</div><div class="ttdoc">Base constructor. It sets the default date.</div><div class="ttdef"><b>Definition:</b> <a href="DateTime_8cpp_source.html#l00046">DateTime.cpp:46</a></div></div>
+<div class="ttc" id="aclassDateTime_html_a246ab4f7cd93e15135efb69363d97d83"><div class="ttname"><a href="classDateTime.html#a246ab4f7cd93e15135efb69363d97d83">DateTime::to_string</a></div><div class="ttdeci">std::string to_string() const</div><div class="ttdoc">transform a dataTime to a string in the following format: 2019-10-01 00:15:06 UTC</div><div class="ttdef"><b>Definition:</b> <a href="DateTime_8cpp_source.html#l00093">DateTime.cpp:93</a></div></div>
+<div class="ttc" id="aDateTime_8h_html"><div class="ttname"><a href="DateTime_8h.html">DateTime.h</a></div></div>
+<div class="ttc" id="aDateTime_8cpp_html_a9962ec9b30855e08347df66f3fc99345"><div class="ttname"><a href="DateTime_8cpp.html#a9962ec9b30855e08347df66f3fc99345">isCorrect</a></div><div class="ttdeci">bool isCorrect(int year, int month, int day, int hour, int min, int sec)</div><div class="ttdoc">auxiliary function to check if the date and the time are in correct format, taking into account,...</div><div class="ttdef"><b>Definition:</b> <a href="DateTime_8cpp_source.html#l00052">DateTime.cpp:52</a></div></div>
+<div class="ttc" id="aclassDateTime_html_a0943bdd7ab55eb6d1937f44fa0a7342a"><div class="ttname"><a href="classDateTime.html#a0943bdd7ab55eb6d1937f44fa0a7342a">DateTime::set</a></div><div class="ttdeci">void set(std::string line)</div><div class="ttdoc">Sets the dataTime if the string is correct, otherwise sets to the default value.</div><div class="ttdef"><b>Definition:</b> <a href="DateTime_8cpp_source.html#l00061">DateTime.cpp:61</a></div></div>
+<div class="ttc" id="aclassDateTime_html_a7f701348d4b4e2f189f931b1f91632d2"><div class="ttname"><a href="classDateTime.html#a7f701348d4b4e2f189f931b1f91632d2">DateTime::weekDay</a></div><div class="ttdeci">int weekDay()</div><div class="ttdoc">Computes the week day, from date of the dataTime. According to the Zeller's congruence given in wikip...</div><div class="ttdef"><b>Definition:</b> <a href="DateTime_8cpp_source.html#l00089">DateTime.cpp:89</a></div></div>
+<div class="ttc" id="aclassDateTime_html_ae507ab264dc54fae07240db856007e68"><div class="ttname"><a href="classDateTime.html#ae507ab264dc54fae07240db856007e68">DateTime::day</a></div><div class="ttdeci">int day()</div><div class="ttdoc">It gives the day.</div><div class="ttdef"><b>Definition:</b> <a href="DateTime_8cpp_source.html#l00074">DateTime.cpp:74</a></div></div>
+<div class="ttc" id="aclassDateTime_html_ad5f71c0dffadc44eb898dca9e9e97aa6"><div class="ttname"><a href="classDateTime.html#ad5f71c0dffadc44eb898dca9e9e97aa6">DateTime::month</a></div><div class="ttdeci">int month()</div><div class="ttdoc">It gives the month.</div><div class="ttdef"><b>Definition:</b> <a href="DateTime_8cpp_source.html#l00071">DateTime.cpp:71</a></div></div>
+<div class="ttc" id="aclassDateTime_html"><div class="ttname"><a href="classDateTime.html">DateTime</a></div><div class="ttdoc">Used to represent dates and times in the format YYYY-MM-dd hh:mm::ss, where.</div><div class="ttdef"><b>Definition:</b> <a href="DateTime_8h_source.html#l00038">DateTime.h:38</a></div></div>
+<div class="ttc" id="aclassDateTime_html_adf4b8e704fc6172397ca6fd875e4cc1f"><div class="ttname"><a href="classDateTime.html#adf4b8e704fc6172397ca6fd875e4cc1f">DateTime::sec</a></div><div class="ttdeci">int sec()</div><div class="ttdoc">It gives the number of seconds.</div><div class="ttdef"><b>Definition:</b> <a href="DateTime_8cpp_source.html#l00083">DateTime.cpp:83</a></div></div>
+<div class="ttc" id="aDateTime_8cpp_html_a40c0e29735b283553262cdd0d46009a2"><div class="ttname"><a href="DateTime_8cpp.html#a40c0e29735b283553262cdd0d46009a2">split</a></div><div class="ttdeci">void split(std::string line, int y, int m, int d, int h, int mn, int s)</div><div class="ttdoc">split the first field in 6 components of the data time. Please consider using string::substr(int,...</div><div class="ttdef"><b>Definition:</b> <a href="DateTime_8cpp_source.html#l00057">DateTime.cpp:57</a></div></div>
+<div class="ttc" id="aclassDateTime_html_a6368ac4394f818c188fd0967ea3af5bd"><div class="ttname"><a href="classDateTime.html#a6368ac4394f818c188fd0967ea3af5bd">DateTime::year</a></div><div class="ttdeci">int year()</div><div class="ttdoc">It gives the year.</div><div class="ttdef"><b>Definition:</b> <a href="DateTime_8cpp_source.html#l00068">DateTime.cpp:68</a></div></div>
+<div class="ttc" id="aclassDateTime_html_a5279b2b5c7e7bf60497902f802e988f8"><div class="ttname"><a href="classDateTime.html#a5279b2b5c7e7bf60497902f802e988f8">DateTime::isBefore</a></div><div class="ttdeci">bool isBefore(DateTime one)</div><div class="ttdoc">check if the referenced object is before in time than the dataTime one</div><div class="ttdef"><b>Definition:</b> <a href="DateTime_8cpp_source.html#l00086">DateTime.cpp:86</a></div></div>
+<div class="ttc" id="aclassDateTime_html_a79f6c2a14f303ad7860f5313a2272635"><div class="ttname"><a href="classDateTime.html#a79f6c2a14f303ad7860f5313a2272635">DateTime::hour</a></div><div class="ttdeci">int hour()</div><div class="ttdoc">It gives the hour.</div><div class="ttdef"><b>Definition:</b> <a href="DateTime_8cpp_source.html#l00077">DateTime.cpp:77</a></div></div>
+<div class="ttc" id="aclassDateTime_html_ab1abad4ec2cd4f807de6cb85061f0506"><div class="ttname"><a href="classDateTime.html#ab1abad4ec2cd4f807de6cb85061f0506">DateTime::min</a></div><div class="ttdeci">int min()</div><div class="ttdoc">It gives the minutes.</div><div class="ttdef"><b>Definition:</b> <a href="DateTime_8cpp_source.html#l00080">DateTime.cpp:80</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

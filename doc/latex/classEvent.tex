@@ -1,0 +1,632 @@
+\hypertarget{classEvent}{}\doxysection{Referencia de la Clase Event}
+\label{classEvent}\index{Event@{Event}}
+
+
+It stores every logged event of a web marketplace as it appears in \href{https://www.kaggle.com/mkechinov/ecommerce-events-history-in-cosmetics-shop}{\texttt{ https\+://www.\+kaggle.\+com/mkechinov/ecommerce-\/events-\/history-\/in-\/cosmetics-\/shop}} It contains the following fields.  
+
+
+
+
+{\ttfamily \#include $<$Event.\+h$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEvent_a5a40dd4708297f7031e29b39e039ae10}\label{classEvent_a5a40dd4708297f7031e29b39e039ae10}} 
+\mbox{\hyperlink{classEvent_a5a40dd4708297f7031e29b39e039ae10}{Event}} ()
+\begin{DoxyCompactList}\small\item\em Constructor without parameters, set to default values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEvent_a4cd32e902f0cafa94a53e892180de7bb}{Event}} (std\+::string line)
+\begin{DoxyCompactList}\small\item\em Given the full text of a line, it initializes the object with the data contained in that line. If the data is not valid in any sense, then the event is declared empty. More details in the P\+DF of the practice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDateTime}{Date\+Time}} \mbox{\hyperlink{classEvent_a07e548e3466d3e070bb387f579d21df8}{get\+Date\+Time}} ()
+\begin{DoxyCompactList}\small\item\em It gives the date of the event. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classEvent_ac180d99d914404e2284ef3ad50addd43}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em It gives the type of the event. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classEvent_a98ba7a69d6f0c7e92db195fc7ec6a104}{get\+Product\+ID}} ()
+\begin{DoxyCompactList}\small\item\em It gives the Product ID of the event. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classEvent_a4933da07f81c68249bd0e3550fe3086d}{get\+Category\+ID}} ()
+\begin{DoxyCompactList}\small\item\em It gives the Category ID of the event. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classEvent_a7d0b431876fc678799d36ea695edb504}{get\+Category\+Code}} ()
+\begin{DoxyCompactList}\small\item\em It gives the Category Code of the event. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classEvent_aed2bf3397c3dc05223a1e5a115627076}{get\+Brand}} ()
+\begin{DoxyCompactList}\small\item\em It gives the Brand of the event. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classEvent_ae411ea586248c56b1d750e90a9324d82}{get\+Price}} ()
+\begin{DoxyCompactList}\small\item\em It gives the Price of the event. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classEvent_a1e6661d88942d8443fbbaf25ba8d1cce}{get\+User\+ID}} ()
+\begin{DoxyCompactList}\small\item\em It gives the User ID of the event. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classEvent_a1ba81e5fab4c160baff08966f8142d0b}{get\+Session}} ()
+\begin{DoxyCompactList}\small\item\em It gives the Session of the event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEvent_a079effc133eeb0b4cc88e4ee9ced08ea}{set\+Date\+Time}} (std\+::string Datetime)
+\begin{DoxyCompactList}\small\item\em Sets the date and time of the event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEvent_a7b74b9d6e425337023215c5b01827e67}{set\+Type}} (std\+::string type)
+\begin{DoxyCompactList}\small\item\em Sets the type of the event among the valid types in \mbox{\hyperlink{Event_8h_ac6d9035308945276f9fa837f67f5921e}{V\+A\+L\+I\+D\+\_\+\+T\+Y\+P\+ES}} if it is not, then it assumes a default value of V\+A\+L\+I\+D\+\_\+\+T\+Y\+P\+ES\mbox{[}0\mbox{]}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEvent_a3896bf13da687da76b52dcf7741a9bae}{set\+Product\+ID}} (std\+::string prod\+\_\+id)
+\begin{DoxyCompactList}\small\item\em It sets the Product ID of the event. If the value provided is the empty string \char`\"{}\char`\"{}, it is set to \mbox{\hyperlink{Event_8h_ab602a7440a5bf2a7a3e6e411432576fe}{E\+M\+P\+T\+Y\+\_\+\+F\+I\+E\+LD}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEvent_a4e77cec6328d40a1fc5635ba583e99c0}{set\+Category\+ID}} (std\+::string cat\+\_\+id)
+\begin{DoxyCompactList}\small\item\em It sets the Category ID of the event. Empty strings \char`\"{}\char`\"{} are allowed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEvent_adb0ec820d64568a0b8f82743d5700065}{set\+Category\+Code}} (std\+::string cat\+\_\+cod)
+\begin{DoxyCompactList}\small\item\em It sets the Category Code of the event. Empty strings \char`\"{}\char`\"{} are allowed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEvent_a7bdf94a1758cede9d9f47062041c89c6}{set\+Brand}} (std\+::string brand)
+\begin{DoxyCompactList}\small\item\em It sets the Brand of the event. Empty strings \char`\"{}\char`\"{} are allowed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEvent_ac637a16105e0c1416e7ad3b030ee3a59}{set\+Price}} (double price)
+\begin{DoxyCompactList}\small\item\em It sets the price. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEvent_a7d99e8aae14c38d8f4fa9d33e3f33fca}{set\+User\+ID}} (std\+::string user\+\_\+id)
+\begin{DoxyCompactList}\small\item\em It sets the User ID of the event. If the value provided is the empty string \char`\"{}\char`\"{}, it is set to \mbox{\hyperlink{Event_8h_ab602a7440a5bf2a7a3e6e411432576fe}{E\+M\+P\+T\+Y\+\_\+\+F\+I\+E\+LD}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEvent_a6f8204c7241e102851356ae04dbf2e37}{set\+Session}} (std\+::string session)
+\begin{DoxyCompactList}\small\item\em It sets the Session of the event. If the value provided is the empty string \char`\"{}\char`\"{}, it is set to \mbox{\hyperlink{Event_8h_ab602a7440a5bf2a7a3e6e411432576fe}{E\+M\+P\+T\+Y\+\_\+\+F\+I\+E\+LD}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEvent_a7268fd6db6b4405883ee42156f65318a}{set}} (std\+::string line)
+\begin{DoxyCompactList}\small\item\em It sets all the data members from a line that describe the event. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classEvent_a690ef00dbb8205ad6807b286f02db956}{is\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em verifies if the object is considered empty, when some of the fields are set to the default values \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classEvent_a317506221f3d1189594fe7ef47bd2910}{to\+\_\+string}} () const
+\begin{DoxyCompactList}\small\item\em transform an event to a string, using separator \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEvent_a2f632dc341bc4769546c8d9af39490b9}\label{classEvent_a2f632dc341bc4769546c8d9af39490b9}} 
+std\+::string {\bfseries report\+Data} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+It stores every logged event of a web marketplace as it appears in \href{https://www.kaggle.com/mkechinov/ecommerce-events-history-in-cosmetics-shop}{\texttt{ https\+://www.\+kaggle.\+com/mkechinov/ecommerce-\/events-\/history-\/in-\/cosmetics-\/shop}} It contains the following fields. 
+
+
+\begin{DoxyItemize}
+\item datetime is the time stamp of the record
+\item type\+: One f these operations view, cart, remove\+\_\+from\+\_\+cart, purchase
+\item prod\+\_\+id\+: Product code. It is an integer value represented as a string, that is, like \char`\"{}0020\char`\"{}. It cannot be null, so if its read is \char`\"{}\char`\"{}, then it must be filled with the E\+M\+T\+P\+Y\+\_\+\+F\+I\+E\+LD constant
+\item cat\+\_\+cod\+: The code of the category of the product involved in the event
+\item brand\+: The name of the brand
+\item price\+: the price of the product expressed as a double value
+\item user\+\_\+id\+: A code of the user that performs the operation. I cannot be a null value
+\item session\+: Id of the browser session in which the event took place
+\end{DoxyItemize}
+
+When these fields appear in a text row, it must appear in this order, separated by charcter \textquotesingle{},\textquotesingle{} and taking into account that some fields might be null, that is, an empty string \char`\"{}\char`\"{} datetime , type , prod\+\_\+id , cat-\/cod , brand , price, user\+\_\+id, session 
+
+Definición en la línea 42 del archivo Event.\+h.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classEvent_a4cd32e902f0cafa94a53e892180de7bb}\label{classEvent_a4cd32e902f0cafa94a53e892180de7bb}} 
+\index{Event@{Event}!Event@{Event}}
+\index{Event@{Event}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{Event()}{Event()}}
+{\footnotesize\ttfamily Event\+::\+Event (\begin{DoxyParamCaption}\item[{std\+::string}]{line }\end{DoxyParamCaption})}
+
+
+
+Given the full text of a line, it initializes the object with the data contained in that line. If the data is not valid in any sense, then the event is declared empty. More details in the P\+DF of the practice. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em line,an} & event in C\+SV format (coma as separator) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classEvent_aed2bf3397c3dc05223a1e5a115627076}\label{classEvent_aed2bf3397c3dc05223a1e5a115627076}} 
+\index{Event@{Event}!getBrand@{getBrand}}
+\index{getBrand@{getBrand}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{getBrand()}{getBrand()}}
+{\footnotesize\ttfamily string Event\+::get\+Brand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It gives the Brand of the event. 
+
+\begin{DoxyReturn}{Devuelve}
+A string that contains the Brand 
+\end{DoxyReturn}
+
+
+Definición en la línea 36 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36                         \{}
+\DoxyCodeLine{37 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_a7d0b431876fc678799d36ea695edb504}\label{classEvent_a7d0b431876fc678799d36ea695edb504}} 
+\index{Event@{Event}!getCategoryCode@{getCategoryCode}}
+\index{getCategoryCode@{getCategoryCode}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{getCategoryCode()}{getCategoryCode()}}
+{\footnotesize\ttfamily string Event\+::get\+Category\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It gives the Category Code of the event. 
+
+\begin{DoxyReturn}{Devuelve}
+A string that contains the Category Code 
+\end{DoxyReturn}
+
+
+Definición en la línea 33 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33                                \{}
+\DoxyCodeLine{34 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_a4933da07f81c68249bd0e3550fe3086d}\label{classEvent_a4933da07f81c68249bd0e3550fe3086d}} 
+\index{Event@{Event}!getCategoryID@{getCategoryID}}
+\index{getCategoryID@{getCategoryID}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{getCategoryID()}{getCategoryID()}}
+{\footnotesize\ttfamily string Event\+::get\+Category\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It gives the Category ID of the event. 
+
+\begin{DoxyReturn}{Devuelve}
+A string that contains the Category ID 
+\end{DoxyReturn}
+
+
+Definición en la línea 30 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30                              \{}
+\DoxyCodeLine{31 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_a07e548e3466d3e070bb387f579d21df8}\label{classEvent_a07e548e3466d3e070bb387f579d21df8}} 
+\index{Event@{Event}!getDateTime@{getDateTime}}
+\index{getDateTime@{getDateTime}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{getDateTime()}{getDateTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDateTime}{Date\+Time}} Event\+::get\+Date\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It gives the date of the event. 
+
+\begin{DoxyReturn}{Devuelve}
+The date as a valid object 
+\end{DoxyReturn}
+
+
+Definición en la línea 21 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21                              \{}
+\DoxyCodeLine{22 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_ae411ea586248c56b1d750e90a9324d82}\label{classEvent_ae411ea586248c56b1d750e90a9324d82}} 
+\index{Event@{Event}!getPrice@{getPrice}}
+\index{getPrice@{getPrice}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{getPrice()}{getPrice()}}
+{\footnotesize\ttfamily double Event\+::get\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It gives the Price of the event. 
+
+\begin{DoxyReturn}{Devuelve}
+A double 
+\end{DoxyReturn}
+
+
+Definición en la línea 39 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39                         \{}
+\DoxyCodeLine{40 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_a98ba7a69d6f0c7e92db195fc7ec6a104}\label{classEvent_a98ba7a69d6f0c7e92db195fc7ec6a104}} 
+\index{Event@{Event}!getProductID@{getProductID}}
+\index{getProductID@{getProductID}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{getProductID()}{getProductID()}}
+{\footnotesize\ttfamily string Event\+::get\+Product\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It gives the Product ID of the event. 
+
+\begin{DoxyReturn}{Devuelve}
+A string that contains the Product ID 
+\end{DoxyReturn}
+
+
+Definición en la línea 27 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27                             \{}
+\DoxyCodeLine{28 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_a1ba81e5fab4c160baff08966f8142d0b}\label{classEvent_a1ba81e5fab4c160baff08966f8142d0b}} 
+\index{Event@{Event}!getSession@{getSession}}
+\index{getSession@{getSession}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{getSession()}{getSession()}}
+{\footnotesize\ttfamily string Event\+::get\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It gives the Session of the event. 
+
+\begin{DoxyReturn}{Devuelve}
+A string that contains the Session 
+\end{DoxyReturn}
+
+
+Definición en la línea 45 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45                           \{}
+\DoxyCodeLine{46 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_ac180d99d914404e2284ef3ad50addd43}\label{classEvent_ac180d99d914404e2284ef3ad50addd43}} 
+\index{Event@{Event}!getType@{getType}}
+\index{getType@{getType}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily string Event\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It gives the type of the event. 
+
+\begin{DoxyReturn}{Devuelve}
+A string that contains the type 
+\end{DoxyReturn}
+
+
+Definición en la línea 24 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24                        \{}
+\DoxyCodeLine{25 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_a1e6661d88942d8443fbbaf25ba8d1cce}\label{classEvent_a1e6661d88942d8443fbbaf25ba8d1cce}} 
+\index{Event@{Event}!getUserID@{getUserID}}
+\index{getUserID@{getUserID}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{getUserID()}{getUserID()}}
+{\footnotesize\ttfamily string Event\+::get\+User\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It gives the User ID of the event. 
+
+\begin{DoxyReturn}{Devuelve}
+A string that contains the User ID 
+\end{DoxyReturn}
+
+
+Definición en la línea 42 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42                          \{}
+\DoxyCodeLine{43 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_a690ef00dbb8205ad6807b286f02db956}\label{classEvent_a690ef00dbb8205ad6807b286f02db956}} 
+\index{Event@{Event}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Event\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+verifies if the object is considered empty, when some of the fields are set to the default values 
+
+\begin{DoxyReturn}{Devuelve}
+bool true if the event is considered empty, false otherwise 
+\end{DoxyReturn}
+
+
+Definición en la línea 83 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83                      \{}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_a7268fd6db6b4405883ee42156f65318a}\label{classEvent_a7268fd6db6b4405883ee42156f65318a}} 
+\index{Event@{Event}!set@{set}}
+\index{set@{set}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void Event\+::set (\begin{DoxyParamCaption}\item[{std\+::string}]{line }\end{DoxyParamCaption})}
+
+
+
+It sets all the data members from a line that describe the event. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em line} & \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 79 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79                                \{}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_a7bdf94a1758cede9d9f47062041c89c6}\label{classEvent_a7bdf94a1758cede9d9f47062041c89c6}} 
+\index{Event@{Event}!setBrand@{setBrand}}
+\index{setBrand@{setBrand}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{setBrand()}{setBrand()}}
+{\footnotesize\ttfamily void Event\+::set\+Brand (\begin{DoxyParamCaption}\item[{std\+::string}]{brand }\end{DoxyParamCaption})}
+
+
+
+It sets the Brand of the event. Empty strings \char`\"{}\char`\"{} are allowed. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em brand} & \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 64 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                                       \{}
+\DoxyCodeLine{65 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_adb0ec820d64568a0b8f82743d5700065}\label{classEvent_adb0ec820d64568a0b8f82743d5700065}} 
+\index{Event@{Event}!setCategoryCode@{setCategoryCode}}
+\index{setCategoryCode@{setCategoryCode}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{setCategoryCode()}{setCategoryCode()}}
+{\footnotesize\ttfamily void Event\+::set\+Category\+Code (\begin{DoxyParamCaption}\item[{std\+::string}]{cat\+\_\+cod }\end{DoxyParamCaption})}
+
+
+
+It sets the Category Code of the event. Empty strings \char`\"{}\char`\"{} are allowed. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em cat\+\_\+cod} & \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 61 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61                                                \{}
+\DoxyCodeLine{62 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_a4e77cec6328d40a1fc5635ba583e99c0}\label{classEvent_a4e77cec6328d40a1fc5635ba583e99c0}} 
+\index{Event@{Event}!setCategoryID@{setCategoryID}}
+\index{setCategoryID@{setCategoryID}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{setCategoryID()}{setCategoryID()}}
+{\footnotesize\ttfamily void Event\+::set\+Category\+ID (\begin{DoxyParamCaption}\item[{std\+::string}]{cat\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+It sets the Category ID of the event. Empty strings \char`\"{}\char`\"{} are allowed. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em cat\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 58 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58                                             \{}
+\DoxyCodeLine{59 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_a079effc133eeb0b4cc88e4ee9ced08ea}\label{classEvent_a079effc133eeb0b4cc88e4ee9ced08ea}} 
+\index{Event@{Event}!setDateTime@{setDateTime}}
+\index{setDateTime@{setDateTime}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{setDateTime()}{setDateTime()}}
+{\footnotesize\ttfamily void Event\+::set\+Date\+Time (\begin{DoxyParamCaption}\item[{std\+::string}]{Datetime }\end{DoxyParamCaption})}
+
+
+
+Sets the date and time of the event. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Datetime} & in the format specified in \mbox{\hyperlink{classDateTime}{Date\+Time}} \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 48 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48                                      \{}
+\DoxyCodeLine{49 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_ac637a16105e0c1416e7ad3b030ee3a59}\label{classEvent_ac637a16105e0c1416e7ad3b030ee3a59}} 
+\index{Event@{Event}!setPrice@{setPrice}}
+\index{setPrice@{setPrice}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{setPrice()}{setPrice()}}
+{\footnotesize\ttfamily void Event\+::set\+Price (\begin{DoxyParamCaption}\item[{double}]{price }\end{DoxyParamCaption})}
+
+
+
+It sets the price. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em price} & @precond 0 $<$= price \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 67 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67                                  \{}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_a3896bf13da687da76b52dcf7741a9bae}\label{classEvent_a3896bf13da687da76b52dcf7741a9bae}} 
+\index{Event@{Event}!setProductID@{setProductID}}
+\index{setProductID@{setProductID}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{setProductID()}{setProductID()}}
+{\footnotesize\ttfamily void Event\+::set\+Product\+ID (\begin{DoxyParamCaption}\item[{std\+::string}]{prod\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+It sets the Product ID of the event. If the value provided is the empty string \char`\"{}\char`\"{}, it is set to \mbox{\hyperlink{Event_8h_ab602a7440a5bf2a7a3e6e411432576fe}{E\+M\+P\+T\+Y\+\_\+\+F\+I\+E\+LD}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em prod\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 55 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55                                             \{}
+\DoxyCodeLine{56  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_a6f8204c7241e102851356ae04dbf2e37}\label{classEvent_a6f8204c7241e102851356ae04dbf2e37}} 
+\index{Event@{Event}!setSession@{setSession}}
+\index{setSession@{setSession}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{setSession()}{setSession()}}
+{\footnotesize\ttfamily void Event\+::set\+Session (\begin{DoxyParamCaption}\item[{std\+::string}]{session }\end{DoxyParamCaption})}
+
+
+
+It sets the Session of the event. If the value provided is the empty string \char`\"{}\char`\"{}, it is set to \mbox{\hyperlink{Event_8h_ab602a7440a5bf2a7a3e6e411432576fe}{E\+M\+P\+T\+Y\+\_\+\+F\+I\+E\+LD}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em session} & \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 75 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{75                                           \{}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_a7b74b9d6e425337023215c5b01827e67}\label{classEvent_a7b74b9d6e425337023215c5b01827e67}} 
+\index{Event@{Event}!setType@{setType}}
+\index{setType@{setType}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily void Event\+::set\+Type (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+Sets the type of the event among the valid types in \mbox{\hyperlink{Event_8h_ac6d9035308945276f9fa837f67f5921e}{V\+A\+L\+I\+D\+\_\+\+T\+Y\+P\+ES}} if it is not, then it assumes a default value of V\+A\+L\+I\+D\+\_\+\+T\+Y\+P\+ES\mbox{[}0\mbox{]}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 51 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51                                     \{}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_a7d99e8aae14c38d8f4fa9d33e3f33fca}\label{classEvent_a7d99e8aae14c38d8f4fa9d33e3f33fca}} 
+\index{Event@{Event}!setUserID@{setUserID}}
+\index{setUserID@{setUserID}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{setUserID()}{setUserID()}}
+{\footnotesize\ttfamily void Event\+::set\+User\+ID (\begin{DoxyParamCaption}\item[{std\+::string}]{user\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+It sets the User ID of the event. If the value provided is the empty string \char`\"{}\char`\"{}, it is set to \mbox{\hyperlink{Event_8h_ab602a7440a5bf2a7a3e6e411432576fe}{E\+M\+P\+T\+Y\+\_\+\+F\+I\+E\+LD}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em user\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 71 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71                                          \{}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEvent_a317506221f3d1189594fe7ef47bd2910}\label{classEvent_a317506221f3d1189594fe7ef47bd2910}} 
+\index{Event@{Event}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}}
+{\footnotesize\ttfamily string Event\+::to\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+transform an event to a string, using separator 
+
+\begin{DoxyReturn}{Devuelve}
+string that contains the event in C\+SV format 
+\end{DoxyReturn}
+
+
+Definición en la línea 87 del archivo Event.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{87                               \{}
+\DoxyCodeLine{88     \textcolor{keywordtype}{string} salida;}
+\DoxyCodeLine{89     salida += \_dateTime.\mbox{\hyperlink{classDateTime_a246ab4f7cd93e15135efb69363d97d83}{to\_string}}();}
+\DoxyCodeLine{90     salida += \textcolor{stringliteral}{","} + \_type;}
+\DoxyCodeLine{91     salida += \textcolor{stringliteral}{","} + \_prod\_id;}
+\DoxyCodeLine{92     salida += \textcolor{stringliteral}{","} + \_cat\_id;}
+\DoxyCodeLine{93     salida += \textcolor{stringliteral}{","} + \_cat\_cod;}
+\DoxyCodeLine{94     salida += \textcolor{stringliteral}{","} + \_brand;}
+\DoxyCodeLine{95     salida += \textcolor{stringliteral}{","} + std::to\_string(\_price);}
+\DoxyCodeLine{96     salida += \textcolor{stringliteral}{","} + \_user\_id;}
+\DoxyCodeLine{97     salida += \textcolor{stringliteral}{","} + \_session;}
+\DoxyCodeLine{98     \textcolor{keywordflow}{return} salida;}
+\DoxyCodeLine{99 \}}
+
+\end{DoxyCode}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Event_8h}{Event.\+h}}\item 
+src/\mbox{\hyperlink{Event_8cpp}{Event.\+cpp}}\end{DoxyCompactItemize}

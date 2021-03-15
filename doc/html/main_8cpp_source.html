@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SHOPPING1: Fichero Fuente src/main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SHOPPING1
+   &#160;<span id="projectnumber">0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Event_8h.html">Event.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;MPTests.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#a563289ecc8833a85499bfda52717dcf3">print</a>(<span class="keyword">const</span> <a class="code" href="classEvent.html">Event</a> array[], <span class="keywordtype">int</span> &amp; nEvent);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#a257f51fa47933f108226f8c281d06bd2">computeActivity</a>(<span class="keyword">const</span> <a class="code" href="classEvent.html">Event</a> arrayE[], <span class="keywordtype">int</span>  nEvents,  <span class="keywordtype">int</span> arrayA[]);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#aea9a8497f53cd708c33d9b2a5efb0204">computeMaxActivityDay</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> arrayA[], <span class="keywordtype">int</span> &amp;maxDay, <span class="keywordtype">int</span> ndays=7);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">   63</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="main_8cpp.html#a563289ecc8833a85499bfda52717dcf3">   67</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#a563289ecc8833a85499bfda52717dcf3">print</a>(<span class="keyword">const</span> <a class="code" href="classEvent.html">Event</a> array[], <span class="keywordtype">int</span> &amp; nEvent) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="main_8cpp.html#a257f51fa47933f108226f8c281d06bd2">   71</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#a257f51fa47933f108226f8c281d06bd2">computeActivity</a>(<span class="keyword">const</span> <a class="code" href="classEvent.html">Event</a> arrayE[], <span class="keywordtype">int</span>  nEvents,  <span class="keywordtype">int</span> arrayA[]){</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    CVAL &lt;&lt; <span class="stringliteral">&quot;Activity found:&quot;</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> day=0; day&lt;7; day++) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        CVAL &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code" href="DateTime_8h.html#adf570ba6d985791ba57df3f224853c7e">DAYNAME</a>[day]&lt;&lt;<span class="stringliteral">&quot;(&quot;</span>&lt;&lt;arrayA[day]&lt;&lt;<span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    CVAL &lt;&lt; endl;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="main_8cpp.html#aea9a8497f53cd708c33d9b2a5efb0204">   80</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#aea9a8497f53cd708c33d9b2a5efb0204">computeMaxActivityDay</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> arrayA[], <span class="keywordtype">int</span> &amp;maxDay, <span class="keywordtype">int</span> ndays){</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="amain_8cpp_html_a563289ecc8833a85499bfda52717dcf3"><div class="ttname"><a href="main_8cpp.html#a563289ecc8833a85499bfda52717dcf3">print</a></div><div class="ttdeci">void print(const Event array[], int &amp;nEvent)</div><div class="ttdoc">displays the content of the array by using the method to_string that easy to transfer data to stream....</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00067">main.cpp:67</a></div></div>
+<div class="ttc" id="aDateTime_8h_html_adf570ba6d985791ba57df3f224853c7e"><div class="ttname"><a href="DateTime_8h.html#adf570ba6d985791ba57df3f224853c7e">DAYNAME</a></div><div class="ttdeci">const char *const DAYNAME[]</div><div class="ttdoc">Array of day names.</div><div class="ttdef"><b>Definition:</b> <a href="DateTime_8h_source.html#l00014">DateTime.h:14</a></div></div>
+<div class="ttc" id="amain_8cpp_html_a257f51fa47933f108226f8c281d06bd2"><div class="ttname"><a href="main_8cpp.html#a257f51fa47933f108226f8c281d06bd2">computeActivity</a></div><div class="ttdeci">void computeActivity(const Event arrayE[], int nEvents, int arrayA[])</div><div class="ttdoc">Update the counter per week day (value in 0..6) for every event found . It also shows the computed va...</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00071">main.cpp:71</a></div></div>
+<div class="ttc" id="amain_8cpp_html_a3c04138a5bfe5d72780bb7e82a18e627"><div class="ttname"><a href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a></div><div class="ttdeci">int main(int argc, char **argv)</div><div class="ttdoc">The main function of the program carries out the following procedure.</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00063">main.cpp:63</a></div></div>
+<div class="ttc" id="aclassEvent_html"><div class="ttname"><a href="classEvent.html">Event</a></div><div class="ttdoc">It stores every logged event of a web marketplace as it appears in https://www.kaggle....</div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00042">Event.h:42</a></div></div>
+<div class="ttc" id="aEvent_8h_html"><div class="ttname"><a href="Event_8h.html">Event.h</a></div></div>
+<div class="ttc" id="amain_8cpp_html_aea9a8497f53cd708c33d9b2a5efb0204"><div class="ttname"><a href="main_8cpp.html#aea9a8497f53cd708c33d9b2a5efb0204">computeMaxActivityDay</a></div><div class="ttdeci">int computeMaxActivityDay(const int arrayA[], int &amp;maxDay, int ndays=7)</div><div class="ttdoc">Compute the max number of activity events, and the day on which is produced.</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00080">main.cpp:80</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

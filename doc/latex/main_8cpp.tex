@@ -1,0 +1,165 @@
+\hypertarget{main_8cpp}{}\doxysection{Referencia del Archivo src/main.cpp}
+\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}Event.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}M\+P\+Tests.\+h\char`\"{}}\newline
+Dependencia gráfica adjunta para main.\+cpp\+:
+% FIG 0
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a563289ecc8833a85499bfda52717dcf3}{print}} (const \mbox{\hyperlink{classEvent}{Event}} array\mbox{[}$\,$\mbox{]}, int \&n\+Event)
+\begin{DoxyCompactList}\small\item\em displays the content of the array by using the method to\+\_\+string that easy to transfer data to stream. The content remains constant \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a257f51fa47933f108226f8c281d06bd2}{compute\+Activity}} (const \mbox{\hyperlink{classEvent}{Event}} arrayE\mbox{[}$\,$\mbox{]}, int n\+Events, int arrayA\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Update the counter per week day (value in 0..6) for every event found . It also shows the computed values on the screen in the following format. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_aea9a8497f53cd708c33d9b2a5efb0204}{compute\+Max\+Activity\+Day}} (const int arrayA\mbox{[}$\,$\mbox{]}, int \&max\+Day, int ndays=7)
+\begin{DoxyCompactList}\small\item\em Compute the max number of activity events, and the day on which is produced. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em The main function of the program carries out the following procedure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+\begin{DoxyAuthor}{Autor}
+D\+E\+C\+S\+AI 
+\end{DoxyAuthor}
+\begin{DoxyNote}{Nota}
+To be implemented by students 
+\end{DoxyNote}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{main_8cpp_a257f51fa47933f108226f8c281d06bd2}\label{main_8cpp_a257f51fa47933f108226f8c281d06bd2}} 
+\index{main.cpp@{main.cpp}!computeActivity@{computeActivity}}
+\index{computeActivity@{computeActivity}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{computeActivity()}{computeActivity()}}
+{\footnotesize\ttfamily void compute\+Activity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEvent}{Event}}}]{arrayE\mbox{[}$\,$\mbox{]},  }\item[{int}]{n\+Events,  }\item[{int}]{arrayA\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Update the counter per week day (value in 0..6) for every event found . It also shows the computed values on the screen in the following format. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{SUNDAY(0) MONDAY(0) TUESDAY(0) WEDNESDAY(0) THURSDAY(0) FRIDAY(0) SATURDAY(0)}
+\DoxyCodeLine{+-\/-\/-\/-\/+-\/-\/-\/-\/+-\/-\/-\/-\/+-\/-\/-\/-\/+-\/-\/-\/-\/+-\/-\/-\/-\/+-\/-\/-\/-\/+-\/-\/-\/-\/+-\/-\/-\/-\/+-\/-\/-\/-\/+-\/-\/-\/-\/+-\/-\/-\/-\/+-\/-\/-\/-\/+-\/-\/-\/-\/+-\/-\/-\/-\/+ }
+\DoxyCodeLine{|    |    |    |    |    |}
+\DoxyCodeLine{0    5    10   15   20   25}
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parámetros}
+{\em arrayE} & an \mbox{\hyperlink{classEvent}{Event}} input array \\
+\hline
+{\em n\+Events} & number of events in arrayE \\
+\hline
+{\em arrayA} & an int output array \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 71 del archivo main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71                                                                        \{}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73     CVAL << \textcolor{stringliteral}{"Activity found:"};}
+\DoxyCodeLine{74     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} day=0; day<7; day++) \{}
+\DoxyCodeLine{75         CVAL << \textcolor{stringliteral}{" "} << \mbox{\hyperlink{DateTime_8h_adf570ba6d985791ba57df3f224853c7e}{DAYNAME}}[day]<<\textcolor{stringliteral}{"("}<<arrayA[day]<<\textcolor{stringliteral}{")"};}
+\DoxyCodeLine{76     \}}
+\DoxyCodeLine{77     CVAL << endl;}
+\DoxyCodeLine{78 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8cpp_aea9a8497f53cd708c33d9b2a5efb0204}\label{main_8cpp_aea9a8497f53cd708c33d9b2a5efb0204}} 
+\index{main.cpp@{main.cpp}!computeMaxActivityDay@{computeMaxActivityDay}}
+\index{computeMaxActivityDay@{computeMaxActivityDay}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{computeMaxActivityDay()}{computeMaxActivityDay()}}
+{\footnotesize\ttfamily int compute\+Max\+Activity\+Day (\begin{DoxyParamCaption}\item[{const int}]{arrayA\mbox{[}$\,$\mbox{]},  }\item[{int \&}]{max\+Day,  }\item[{int}]{ndays = {\ttfamily 7} }\end{DoxyParamCaption})}
+
+
+
+Compute the max number of activity events, and the day on which is produced. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em arrayA} & the counter of activities, an input array \\
+\hline
+{\em ndays} & number of days \\
+\hline
+{\em max\+Day} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+max\+Activity the counter of events of 
+\end{DoxyReturn}
+
+
+Definición en la línea 80 del archivo main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80                                                                      \{}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+The main function of the program carries out the following procedure. 
+
+
+\begin{DoxyItemize}
+\item It uses a static array of Events to store a sequence of events read from keyboard (likely to be redirected from a data file in the ./tests folder)
+\item It reads the maximum number of valid records to be stored in the array.
+\item If the event read is right (use the method is\+Empty() to detect non-\/valid records), it is stored in the array, otherwise, it is dismissed. Only valid records count.
+\item Next, it computes the number of events found at each day of the week (complete the implementation of the local function \mbox{\hyperlink{main_8cpp_a257f51fa47933f108226f8c281d06bd2}{compute\+Activity()}} which also shows the result)
+\item Next, it finds which is the day of highest activity recorded and show it on screen 
+\end{DoxyItemize}
+
+Definición en la línea 63 del archivo main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63                                 \{}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8cpp_a563289ecc8833a85499bfda52717dcf3}\label{main_8cpp_a563289ecc8833a85499bfda52717dcf3}} 
+\index{main.cpp@{main.cpp}!print@{print}}
+\index{print@{print}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void print (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEvent}{Event}}}]{array\mbox{[}$\,$\mbox{]},  }\item[{int \&}]{n\+Event }\end{DoxyParamCaption})}
+
+
+
+displays the content of the array by using the method to\+\_\+string that easy to transfer data to stream. The content remains constant 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em array} & of the Events \\
+\hline
+{\em n\+Event} & number of events in the array \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 67 del archivo main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67                                               \{}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 \}}
+
+\end{DoxyCode}
