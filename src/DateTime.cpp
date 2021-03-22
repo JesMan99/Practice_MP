@@ -25,8 +25,9 @@ using namespace std;
 bool isCorrect(int year, int month, int day, int hour, int min, int sec){
     
     int days_month[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+    month--;
     
-    if(month > 12 || month < 1)
+    if(month > 11 || month < 1)
         return false;
     
     else if (hour > 23 ||hour < 0 || min > 59 || min < 0 || sec < 0 || sec > 59)
@@ -35,10 +36,9 @@ bool isCorrect(int year, int month, int day, int hour, int min, int sec){
     if ((year % 4 == 0 && year % 100 != 0) || year %  400 == 0)
         days_month[1]++;
     
-    month = month -1;
-    
     if (day < 1 || day > days_month[month])
         return false;
+    else return true; 
 }
 /**
  * @brief split the first field in 6 components of the data time.
