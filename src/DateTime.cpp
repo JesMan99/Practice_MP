@@ -22,7 +22,24 @@ using namespace std;
  * @param sec input
  * @return true if is correct, false if not
  */
-bool isCorrect(int year, int month, int day, int hour, int min, int sec);
+bool isCorrect(int year, int month, int day, int hour, int min, int sec){
+    
+    int days_month[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+    
+    if(month > 12 || month < 1)
+        return false;
+    
+    else if (hour > 23 ||hour < 0 || min > 59 || min < 0 || sec < 0 || sec > 59)
+        return false;
+    
+    if ((year % 4 == 0 && year % 100 != 0) || year %  400 == 0)
+        days_month[1]++;
+    
+    month = month -1;
+    
+    if (day < 1 || day > days_month[month])
+        return false;
+}
 /**
  * @brief split the first field in 6 components of the data time.
  * Please consider using string::substr(int, int)[https://en.cppreference.com/w/cpp/string/basic_string/substr] to cut the line
@@ -42,7 +59,14 @@ bool isCorrect(int year, int month, int day, int hour, int min, int sec);
  * @param mn output int
  * @param s output int
  */
-void split( const std::string &line, int &y, int &m, int &d, int &h, int &mn, int &s);
+void split( const std::string &line, int &y, int &m, int &d, int &h, int &mn, int &s){
+    y = stoi(line.substr(0,4));
+    m = stoi(line.substr(5,2));
+    d = stoi(line.substr(8,2));
+    h = stoi(line.substr(11,2));
+    mn = stoi(line.substr(14,2));
+    s = stoi(line.substr(17,2));
+}
 
 DateTime::DateTime() {
     initDefault();
@@ -63,25 +87,20 @@ bool isCorrect(int year, int month, int day, int hour, int min, int sec) {
 }
 
 void split( const std::string &line, int &y, int &m, int &d, int &h, int &mn, int &s) {
-
+    
 }
 
 void DateTime::set( const std::string &line) {
-    _year = stoi(line,substr(0,4));
-    _month = stoi(line,substr(5,2));
-    _day = stoi(line,substr(8,2));
-    _hour = stoi(line,substr(11,2));
-    _min = stoi(line,substr(14,2));
-    _sec = stoi(line,substr(17,2));
+    _year = stoi(line.substr(0,4));
+    _month = stoi(line.substr(5,2));
+    _day = stoi(line.substr(8,2));
+    _hour = stoi(line.substr(11,2));
+    _min = stoi(line.substr(14,2));
+    _sec = stoi(line.substr(17,2));
 }
 
 DateTime::DateTime( const string  &line) {
-    _year = stoi(line,substr(0,4));
-    _month = stoi(line,substr(5,2));
-    _day = stoi(line,substr(8,2));
-    _hour = stoi(line,substr(11,2));
-    _min = stoi(line,substr(14,2));
-    _sec = stoi(line,substr(17,2));
+    set (&line);
 }
 
 int DateTime::year() const { return _year; }
